@@ -14,4 +14,4 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jayweb.settings')
 
 application = get_asgi_application()
-val = 0
+val = 1
