@@ -26,6 +26,7 @@ urlpatterns = [
 
 urlpatterns += [
     path( 'catalog/', include('catalog.urls')),
+    path( 'translator/', include('translator.urls')),
 ]
 
 urlpatterns += [

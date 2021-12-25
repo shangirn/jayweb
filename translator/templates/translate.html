@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Translator Home</h1>
+  <p>Welcome to local translator servicr By <em>Jaytosh</em>!</p>
+  <h2>Available Service</h2>
+  <p>Following languages are supported:</p>
+  <form action="/translator/" method="post">
+    <label for="to_translate">Text: </label>
+    <input id="to_translate" type="text" name="to_translate" value="{{ to_translate }}">
+    <input type="submit" value="OK">
+  </form>
+  <ul>
+    <li><strong>English</strong></li>
+    <li><strong>Hindi</strong></li>
+    <li><strong>Tamil</strong></li>
+    {{ Result }}
+  </ul>
+{% endblock %}
